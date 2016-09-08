@@ -43,8 +43,8 @@ class SpiderMain (object):
                 if count == 10:
                      break
                 count = count + 1
-            except:
-                print "crawl failed !"
+            except Exception as f:
+                print "crawl failed !", f
 
         self.outputer.output_html()
 #主函数main method
